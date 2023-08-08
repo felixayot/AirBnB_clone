@@ -5,7 +5,7 @@ This is a module containing the baseclass defination for the AirBnB project
 
 from datetime import datetime
 from uuid import uuid4
-
+import models
 
 date_fmt = "%Y-%m-%dT%H:%M:%S.%f"
 
@@ -19,6 +19,7 @@ class BaseModel:
             self.id = str(uuid4())
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
+            models.storage.new(self)
 
         else:
             str_created_at = kwargs["created_at"]
@@ -47,6 +48,7 @@ class BaseModel:
         """
 
         self.updated_at = datetime.now()
+        models.storage.save()
 
     def to_dict(self):
         """
