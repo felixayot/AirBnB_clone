@@ -214,7 +214,7 @@ class HBNBCommand(cmd.Cmd):
         return True
 
     def do_EOF(self, line):
-        """Ends the console session when EOD is supplied or
+        """Ends the console session when EOF is supplied or
            ctrl-D is invoked."""
         sys.stdout.write("\n")
         return True
