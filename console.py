@@ -111,7 +111,7 @@ class HBNBCommand(cmd.Cmd):
     def do_destroy(self, line):
         """Deletes an instance based on the class name and id
            (save the change into the JSON file).
-        Usage: destroy <class> <id> or <class>.destroy(<id>)
+           Usage: destroy <class> <id> or <class>.destroy(<id>)
         """
         line_parsed = parse_line(line)
         objdict = storage.all()
@@ -120,7 +120,7 @@ class HBNBCommand(cmd.Cmd):
         elif line_parsed[0] not in HBNBCommand.__classes:
             print("** class doesn't exist **")
         elif len(line_parsed) == 1:
-            print("** instace id missing **")
+            print("** instance id missing **")
         elif "{}.{}".format(line_parsed[0], line_parsed[1]) \
                 not in objdict.keys():
             print("** no instance found **")
@@ -162,7 +162,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
             return False
         if parsed_line[0] not in HBNBCommand.__classes:
-            print("** classdoesn't exist **")
+            print("** class doesn't exist **")
             return False
         if len(parsed_line) == 1:
             print("** instance id missing **")
