@@ -7,7 +7,7 @@ from time import sleep
 from models.review import Review
 
 
-class Testreview_instantiation(unittest.TestCase):
+class TestReview_instantiation(unittest.TestCase):
     """Test cases for class review instantiation."""
 
     # Tests that a new review instance can be created.
@@ -96,7 +96,7 @@ class Testreview_instantiation(unittest.TestCase):
             Review(id=None, created_at=None, updated_at=None)
 
 
-class Testreview_save(unittest.TestCase):
+class TestReview_save(unittest.TestCase):
     """Test cases for save method."""
 
     # Tests that updated review is saved at the current time.
@@ -135,7 +135,7 @@ class Testreview_save(unittest.TestCase):
             self.assertIn(revid, f.read())
 
 
-class Testreview_to_dict(unittest.TestCase):
+class TestReview_to_dict(unittest.TestCase):
     """Test cases for to_dict method of the review class."""
 
     # Tests that review instance is returned as a dictionary.
