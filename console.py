@@ -102,7 +102,7 @@ class HBNBCommand(cmd.Cmd):
         elif line_parsed[0] not in HBNBCommand.__classes:
             print("** class doesn't exist **")
         elif len(line_parsed) == 1:
-            print("** instace id missing **")
+            print("** instance id missing **")
         elif "{}.{}".format(line_parsed[0], line_parsed[1]) not in objdict:
             print("** no instance found **")
         else:
