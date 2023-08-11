@@ -25,7 +25,7 @@ From the code snippet below, you can see that the console works in both interact
 When the `help` command is invoked, you can see all the available commands on the console. Use this command: `help <cmd>` as in `help` followed by the command without the angle brackets to view the documentation and the usage guide for each command.
 
 ```
-f-ayot@mypc:~/AirBnB_clone$ ./console.py
+f-ayot@mypc:~/AirBnB_clone$ ./console.py     # This is in an interactive mode
 (hbnb) help
 
 Documented commands (type help <topic>):
@@ -56,10 +56,10 @@ EOF  all  clear  count  create  destroy  help  quit  show  update
 (hbnb) User.destroy("76673790-407c-4022-ae94-9feb5b085044")
 (hbnb) User.count()
 0
-(hbnb) echo "help" | ./console.py
-*** Unknown syntax: echo "help" | ./console.py
+(hbnb) wrong cmd
+*** Unknown syntax: wrong cmd
 (hbnb)
-f-ayot@mypc:~/AirBnB_clone$ echo "help" | ./console.py
+f-ayot@mypc:~/AirBnB_clone$ echo "help" | ./console.py            # This is in a non-interactive mode
 (hbnb)
 Documented commands (type help <topic>):
 ========================================
@@ -70,7 +70,7 @@ f-ayot@mypc:~/AirBnB_clone$
 ```
 
 ## Testing
-All unit tests for the all the class features for each module can found on the repository using using these paths:
+Unit tests for all the class features for each module can be found on the repository using these paths:
 - Unittests for `filestorage.py`: `tests/test_engine/test_filestorage.py`
 - Unittests for `console.py`: `tests/test_console.py`
 - Unittests for models module: `tests/test_models/test_*`
