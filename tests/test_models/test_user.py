@@ -71,11 +71,11 @@ class TestUser_instantiation(unittest.TestCase):
         dt = datetime.today()
         dt_repr = repr(dt)
         user = User()
-        user.id = "123456"
+        user.id = "14151624"
         user.created_at = user.updated_at = dt
         us_str = user.__str__()
-        self.assertIn("[User] (123456)", us_str)
-        self.assertIn("'id': '123456'", us_str)
+        self.assertIn("[User] (14151624)", us_str)
+        self.assertIn("'id': '14151624'", us_str)
         self.assertIn("'created_at': " + dt_repr, us_str)
         self.assertIn("'updated_at': " + dt_repr, us_str)
 
@@ -89,8 +89,8 @@ class TestUser_instantiation(unittest.TestCase):
     def test_user_instantiation_with_kwargs(self):
         dt = datetime.today()
         dt_iso = dt.isoformat()
-        user = User(id="345", created_at=dt_iso, updated_at=dt_iso)
-        self.assertEqual(user.id, "345")
+        user = User(id="1738", created_at=dt_iso, updated_at=dt_iso)
+        self.assertEqual(user.id, "1738")
         self.assertEqual(user.created_at, dt)
         self.assertEqual(user.updated_at, dt)
 
