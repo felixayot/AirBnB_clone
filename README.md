@@ -42,7 +42,7 @@ EOF  all  clear  count  create  destroy  help  quit  show  update
 (hbnb) count User
 0
 (hbnb) show Place
-** instace id missing **
+** instance id missing **
 (hbnb) create User
 76673790-407c-4022-ae94-9feb5b085044
 (hbnb) User.all()
