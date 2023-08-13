@@ -91,7 +91,7 @@ class TestReview_instantiation(unittest.TestCase):
         self.assertEqual(review.updated_at, dt)
 
     # Tests that review raises an exception when None as a value in kwargs.
-    def test_instantiation_with_None_kwargs(self):
+    def test_review_instantiation_with_None_kwargs(self):
         with self.assertRaises(TypeError):
             Review(id=None, created_at=None, updated_at=None)
 
