@@ -71,7 +71,7 @@ f-ayot@mypc:~/AirBnB_clone$
 
 ## Testing
 Unit tests for all the class features for each module can be found on the repository using these paths:
-- Unittests for `filestorage.py`: `tests/test_engine/test_filestorage.py`
+- Unittests for `filestorage.py`: `tests/test_models/test_engine/test_filestorage.py`
 - Unittests for `console.py`: `tests/test_console.py`
 - Unittests for models module: `tests/test_models/test_*`
 
