@@ -79,7 +79,7 @@ Run the tests using these commands: `python3 -m unittest discover tests` ,runs a
 
 ## Authors
 - ***Felix Ayot*** < felixayot@gmail.com >
-- ***Abraham Maiko*** < bamjnr99@gmail.com >
+- ***Abraham Maiko Kingoo*** < bamjnr99@gmail.com >
 
 ## Acknowledgements
 - ALX SE program provided the resources and project guidance. More information on this amazing program can be found through this [link](https://www.alxafrica.com/).
